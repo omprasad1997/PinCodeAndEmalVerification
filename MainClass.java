@@ -5,8 +5,7 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class MainClass {
-
-
+	
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -17,7 +16,11 @@ public class MainClass {
 		Matcher mt = pt.matcher(pinCode);
 
 		boolean result = mt.matches();
-		System.out.println(result);
+		
+		if(result)
+            System.out.println("Valid Pin");
+        else    
+            System.out.println("Invalid Pin");
 
 	}
 
