@@ -23,5 +23,4 @@ public class MainClass {
 			System.out.println("Invalid Pin");
 
 	}
-
 }
