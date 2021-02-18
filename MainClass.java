@@ -10,17 +10,17 @@ public class MainClass {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Enter Pin Code : ");
-		String pinCode = sc.nextLine();
-		Pattern pt = Pattern.compile("((^[0-9][0-9]{5}$)|([0-9]{3}[\\s][0-9]{3}$))");
-		Matcher mt = pt.matcher(pinCode);
+		System.out.print("Enter email : ");
+		String userEmail = sc.nextLine();
+		Pattern pt = Pattern.compile("^(.+)+@bridgelabz[.]co$");
+		Matcher mt = pt.matcher(userEmail);
 
 		boolean result = mt.matches();
 
 		if(result)
-			System.out.println("Valid Pin");
+			System.out.println("Valid email");
 		else    
-			System.out.println("Invalid Pin");
+			System.out.println("Invalid email");
 
 	}
 }
