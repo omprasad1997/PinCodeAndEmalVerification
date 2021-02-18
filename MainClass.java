@@ -12,7 +12,7 @@ public class MainClass {
 
 		System.out.print("Enter email : ");
 		String userEmail = sc.nextLine();
-		Pattern pt = Pattern.compile("^(.+)");
+		Pattern pt = Pattern.compile("^@(.+)");
 		Matcher mt = pt.matcher(userEmail);
 
 		boolean result = mt.matches();
