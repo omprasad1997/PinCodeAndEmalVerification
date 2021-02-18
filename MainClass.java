@@ -12,7 +12,7 @@ public class MainClass {
 
 		System.out.print("Enter Pin Code : ");
 		String pinCode = sc.nextLine();
-		Pattern pt = Pattern.compile("^[0-9][0-9]{5}$");
+		Pattern pt = Pattern.compile("((^[0-9][0-9]{5}$)|([0-9]{3}[ \\\\s][0-9]{3}$))");
 		Matcher mt = pt.matcher(pinCode);
 
 		boolean result = mt.matches();
