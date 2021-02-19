@@ -6,18 +6,18 @@ import java.util.regex.Matcher;
 
 public class MainClass {
 	
-	public static void emailValidatePartTwo()
+	public static void emailValidatePartThree()
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter email : ");
 		String userEmail = sc.nextLine();
-		if(Pattern.matches("^@[a-z]*", userEmail))
+		if(Pattern.matches("^@[a-z]*[.][a-z]{2}$", userEmail))
 			System.out.println("Valid email");
 		else    
 			System.out.println("Invalid email");
 	}
 	public static void main(String[] args) {
 	
-		emailValidatePartTwo();
+		emailValidatePartThree();
 	}
 }
