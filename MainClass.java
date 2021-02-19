@@ -11,7 +11,7 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter email : ");
 		String userEmail = sc.nextLine();
-		if(Pattern.matches("^[a-z0-9]{3}[.][_a-z0-9]*@[a-z]*[.][a-z]{2}$", userEmail))
+		if(Pattern.matches("^(abc)?(.+)@([a-z]*)([.][a-z]{2,3})?(.+)$", userEmail))
 			System.out.println("Valid email");
 		else    
 			System.out.println("Invalid email");
