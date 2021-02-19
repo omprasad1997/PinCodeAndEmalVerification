@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 
 public class MainClass {
 	
-	public static void emailValidatePartThree()
+	public static void emailValidatePartFour()
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter email : ");
@@ -18,6 +18,6 @@ public class MainClass {
 	}
 	public static void main(String[] args) {
 	
-		emailValidatePartThree();
+		emailValidatePartFour();
 	}
 }
