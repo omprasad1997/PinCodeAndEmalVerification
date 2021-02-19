@@ -12,9 +12,9 @@ public class MainClass {
 		System.out.print("Enter email : ");
 		String userEmail = sc.nextLine();
 		if(Pattern.matches("^(abc)?(.+)@([a-z]*)([.][a-z]{2,3})?(.+)$", userEmail))
-			System.out.println("Valid email");
+			System.out.println("Valid email ");
 		else    
-			System.out.println("Invalid email");
+			System.out.println("Invalid email ");
 	}
 	public static void main(String[] args) {
 	
